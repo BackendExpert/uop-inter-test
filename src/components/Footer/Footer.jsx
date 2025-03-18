@@ -12,19 +12,18 @@ import Linkedin from '../../assets/Linked.png'
 const Footer = () => {
     const currentYear = new Date().getFullYear();
   return (
-    <div className="block relative bg-[url(https://thumbs.dreamstime.com/b/my-beautyful-university-flower-season-most-beautiful-south-asia-105031444.jpg?w=768)] bg-cover bg-center xl:px-28 px-4 text-white">
-        <div className='absolute inset-0 bg-black opacity-80'></div>
-        <div className="relative">
+    <div className="block bg-gray-200/20 bg-cover bg-center xl:px-28 px-4 border-t borer-gray-300">
+        <div className="">
             <div className='py-16'>
                 <div className="xl:flex">
                     <div className="xl:w-1/3">
-                        <img src={UopLogo} alt="" className='h-20 w-auto'/>
+                        <img src={UopLogo} alt="" className='h-16 w-auto'/>
 
-                        <div className="mt-4 ml-8">
-                            <p className="py-1 text-lg">University of Peradeniya</p>
-                            <p className="py-1 text-lg">Peradeniya</p>
-                            <p className="py-1 text-lg">20400</p>
-                            <p className="py-1 text-lg">Sri Lanka</p>
+                        <div className="mt-4 ml-8 text-gray-500">
+                            <p className="py-1 ">University of Peradeniya</p>
+                            <p className="py-1 ">Peradeniya</p>
+                            <p className="py-1 ">20400</p>
+                            <p className="py-1 ">Sri Lanka</p>
                         </div>
 
                         <div className="mt-4 ml-8">
@@ -36,13 +35,13 @@ const Footer = () => {
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-4">
                             <div className="">
                                 <div className="w-full xl:my-0 my-8">
-                                    <h1 className="uppercase font-semibold text-xl">main navigation</h1>
+                                    <h1 className="uppercase font-semibold text-lg text-gray-500">main navigation</h1>
                                     <hr className='w-3/4 my-2'/>
                                     <div className="mt-4">
                                         {
                                             mainNavigation.map((data, index) => {
                                                 return (
-                                                    <ul className='xl:ml-0 ml-8 duration-500 hover:pl-2 hover:text-[#e8b910] hover:font-semibold py-1 font text-lg' key={index}>
+                                                    <ul className='xl:ml-0 ml-8 duration-500 text-gray-500 hover:pl-2 hover:text-[#e8b910] hover:font-semibold py-1 font ' key={index}>
                                                         <a href={data.link}>{data.name}</a>
                                                     </ul>
                                                 )
@@ -51,7 +50,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <div className="w-full xl:my-0 my-8">
-                                    <h1 className="uppercase font-semibold text-xl mt-4">location</h1>
+                                    <h1 className="uppercase font-semibold text-gray-500 mt-4">location</h1>
                                     <hr className='w-3/4 my-2'/>
                                     <div className="mt-4">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.8760289680417!2d80.59481527558846!3d7.254947514230262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae368deaaaaaaab%3A0xb5476b88282d47fb!2sUniversity%20of%20Peradeniya!5e0!3m2!1sen!2slk!4v1738049825365!5m2!1sen!2slk" 
@@ -66,13 +65,13 @@ const Footer = () => {
                             </div>
                             <div className="w-full xl:my-0 my-8">
                                 <div className="">
-                                    <h1 className="uppercase font-semibold text-xl">Information for</h1>
+                                    <h1 className="uppercase font-semibold text-gray-500">Information for</h1>
                                     <hr className='w-3/4 my-2'/>
                                     <div className="mt-8">
                                         {
                                             informationFor.map((data, index) => {
                                                 return (
-                                                    <ul className='xl:ml-0 ml-8 duration-500 hover:pl-2 hover:text-[#e8b910] hover:font-semibold py-1 font text-lg' key={index}>
+                                                    <ul className='xl:ml-0 ml-8 duration-500 hover:pl-2 text-gray-500 hover:text-[#e8b910] hover:font-semibold py-1 ' key={index}>
                                                         <a href={data.link}>{data.name}</a>
                                                     </ul>
                                                 )
@@ -82,13 +81,13 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="w-full xl:my-0 my-8">
-                                <h1 className="uppercase font-semibold text-xl">Quick Links</h1>
+                                <h1 className="uppercase font-semibold text-gray-500">Quick Links</h1>
                                 <hr className='w-3/4 my-2'/>
                                 <div className="mt-8">
                                         {
                                             quickLinks.map((quickLink, index) => {
                                                 return (
-                                                    <ul className='xl:ml-0 ml-8 duration-500 hover:pl-2 hover:text-[#e8b910] hover:font-semibold py-1 font text-lg' key={index}>
+                                                    <ul className='xl:ml-0 ml-8 duration-500 hover:pl-2 text-gray-500 hover:text-[#e8b910] hover:font-semibold py-1 ' key={index}>
                                                         <a href={quickLink.link}>{quickLink.name}</a>
                                                     </ul>
                                                 )

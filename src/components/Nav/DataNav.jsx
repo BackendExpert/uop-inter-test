@@ -110,32 +110,33 @@ const secNavData = [
 
 
     // Vacancies
-
     {
         id: 8,
-        name: 'More',
+        name: 'International Student Support',
         submenu: [
-            {
-                id: 1,
-                name: 'International Student Support',
-                menusubL: [
-                    { id: 1, link: '#', name: 'International Relations Office' },
-                    { id: 2, link: '#', name: 'Student Counseling & Career Support' },
-                ]
-            },
-            { id: 2, name: 'Contact Us', link: '#' },
-            {
-                id: 3,
-                name: 'Downloadable Resources',
-                menusubL: [
-                    { id: 1, link: '#', name: 'Student Handbook (PDF)' },
-                    { id: 2, link: '#', name: 'Application Guide (PDF)' },
-                    { id: 3, link: '#', name: 'Course Catalogs' },
-                ]
-            },
-            { id: 4, name: 'Apply Now ', link: '#' },
+            { id: 1, link: '#', name: 'International Relations Office' },
+            { id: 2, link: '#', name: 'Student Counseling & Career Support' },
         ]
-    }
+    },
+    {
+        id: 9,
+        name: 'Contact Us',
+        link: '#'
+    },
+    {
+        id: 10,
+        name: 'Downloadable Resources',
+        submenu: [
+            { id: 1, link: '#', name: 'Student Handbook (PDF)' },
+            { id: 2, link: '#', name: 'Application Guide (PDF)' },
+            { id: 3, link: '#', name: 'Course Catalogs' },
+        ]
+    },
+    {
+        id: 11,
+        name: 'Apply Now ',
+        link: '#'
+    },
 ]
 
 export { MainNavData, secNavData };

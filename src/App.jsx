@@ -41,7 +41,7 @@ export default function App() {
 
   return (
       <BrowserRouter>
-        <div className="xl:block hidden">
+        <div className="">
           <NewNav />
         </div>
         {shouldShowNavBar && (
