@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import 'aos/dist/aos.css';
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import NewNav from "./components/Nav/NewNav";
 
 export default function App() {
   const [showNavBar, setShowNavBar] = useState(true);
@@ -41,7 +42,7 @@ export default function App() {
   return (
       <BrowserRouter>
         <div className="xl:block hidden">
-          <MainNav />
+          <NewNav />
         </div>
         {shouldShowNavBar && (
           <div
@@ -53,7 +54,6 @@ export default function App() {
               : "shadow-md transition-colors duration-500"
           }`}
           >
-            <SecNav />
           </div>
         )}
         <Routes>
