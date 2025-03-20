@@ -32,6 +32,12 @@ const MainNavData = [
 
 ]
 
+import { FaUserGraduate, FaPeopleGroup, FaDownload } from "react-icons/fa6";
+import { FaFileAlt } from "react-icons/fa";
+import { MdPayment } from "react-icons/md";
+
+
+
 const secNavData = [
     // About
     {
@@ -55,6 +61,7 @@ const secNavData = [
     {
         id: 3,
         name: 'Academic Programs',
+        icon: FaUserGraduate,
         submenu: [
             { id: 1, name: 'Undergraduate', link: '#' },
             { id: 2, name: 'Postgraduate', link: '#' },
@@ -66,6 +73,7 @@ const secNavData = [
     {
         id: 4,
         name: "Research Opportunities",
+        icon: FaUserGraduate,
         link: '#'
     },
 
@@ -74,6 +82,7 @@ const secNavData = [
     {
         id: 5,
         name: 'Admissions',
+        icon: FaFileAlt,
         submenu: [
             { id: 1, name: 'Eligibility', link: '#' },
             { id: 2, name: 'Application Process', link: '#' },
@@ -85,6 +94,7 @@ const secNavData = [
 
     {
         id: 6,
+        icon: MdPayment,
         name: 'Fees & Scholarships',
         submenu: [
             { id: 1, name: 'Tuition Fees', link: '#' },
@@ -98,6 +108,7 @@ const secNavData = [
 
     {
         id: 7,
+        icon: FaPeopleGroup,
         name: "Student Life",
         submenu: [
             { id: 1, name: 'Accommodation', link: '#' },
@@ -126,6 +137,7 @@ const secNavData = [
     {
         id: 10,
         name: 'Downloadable Resources',
+        icon: FaDownload,
         submenu: [
             { id: 1, link: '#', name: 'Student Handbook (PDF)' },
             { id: 2, link: '#', name: 'Application Guide (PDF)' },
@@ -135,6 +147,7 @@ const secNavData = [
     {
         id: 11,
         name: 'Apply Now ',
+        icon: FaUserGraduate,
         link: '#'
     },
 ]

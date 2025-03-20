@@ -1,11 +1,24 @@
-import React from 'react'
+import React from 'react';
+import HeroSection from './HeroSection';
+import MenuItems from './MenuItems';
 
 const HomePage = () => {
   return (
-    <div className='my-40 text-red-500'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio, impedit exercitationem vel explicabo dolores quia, facere voluptas debitis fuga quaerat porro vero eligendi alias enim doloremque? Assumenda, officia molestias.
-    </div>
-  )
-}
+    <div className="relative">
+      {/* Hero Section */}
+      <HeroSection />
 
-export default HomePage
+      {/* MenuItems - Positioned above HeroSection */}
+      <div className="absolute xl:top-96 md:top-100 top-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full max-w-4xl">
+        <MenuItems />
+      </div>
+
+      <div className="xl:mt-64 md:mt-72 mt-20">
+        lore\
+
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
