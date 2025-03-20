@@ -15,52 +15,45 @@ export default function App() {
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY && currentScrollY > 50) {
-
-      setShowNavBar(false);
-    } else {
-
-      setShowNavBar(true);
-    }
+    setShowNavBar(!(currentScrollY > lastScrollY && currentScrollY > 50));
     setIsTopOfPage(currentScrollY === 0);
     setLastScrollY(currentScrollY);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   const shouldShowNavBar = !location.pathname.startsWith("/Dashboard");
   const shouldShowFooter = !location.pathname.startsWith("/Dashboard");
 
   return (
-      <BrowserRouter>
-        <div className="">
-          <NewNav />
-        </div>
+    <BrowserRouter>
+      {/* Navigation Bar */}
+      <div className="fixed top-0 left-0 w-full z-50">
+        <NewNav />
+      </div>
+
+      {/* Adjust content so it doesn't go under the navbar */}
+      <div className="pt-16">
         {shouldShowNavBar && (
           <div
-          className={`fixed top-0 w-full z-50 transition-transform duration-300 ${
-            showNavBar ? "translate-y-0" : "-translate-y-full"
-          } ${
-            isTopOfPage
-              ? "xl:mt-28"
-              : "shadow-md transition-colors duration-500"
-          }`}
-          >
-          </div>
+            className={`fixed top-0 w-full z-50 transition-transform duration-300 ${
+              showNavBar ? "translate-y-0" : "-translate-y-full"
+            } ${isTopOfPage ? "xl:mt-0" : "shadow-md transition-colors duration-500"}`}
+          />
         )}
+
+        {/* Page Routes */}
         <Routes>
-          <Route path="*" element={<ErrorPage /> } />
-          <Route path="/" element={<HomePage /> } />
+          <Route path="*" element={<ErrorPage />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
-        <Footer />
-      </BrowserRouter>
-  )
+
+        {/* Footer */}
+        {shouldShowFooter && <Footer />}
+      </div>
+    </BrowserRouter>
+  );
 }

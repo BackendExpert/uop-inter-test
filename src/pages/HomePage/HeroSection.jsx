@@ -4,7 +4,7 @@ import homeImg from '../../assets/Hdr1.jpg';
 const HeroSection = () => {
     return (
         <div
-            className="block relative xl:h-[80vh] bg-cover bg-center xl:px-28 px-4 text-white"
+            className="block relative xl:h-[80vh] bg-cover bg-center xl:px-28 px-4 text-white -mt-20"
             style={{ 
                 backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0)), url(${homeImg})` 
             }}
