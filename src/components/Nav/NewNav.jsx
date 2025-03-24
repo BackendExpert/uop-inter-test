@@ -14,7 +14,7 @@ const NewNav = () => {
     return (
         <div className="relative">
             {/* Navigation Bar */}
-            <div className="xl:px-20 px-4 py-0 bg-transparent border-b border-gray-200 shadow-md">
+            <div className="xl:px-20 px-4 py-0 bg-white/10 backdrop-blur-lg border-b border-gray-200 shadow-md">
                 <div className="flex justify-between items-center">
                     {/* Menu Toggle Button */}
                     <div className="mt-2">
@@ -35,7 +35,7 @@ const NewNav = () => {
                                 <h1 className="xl:text-lg uppercase text-[#e8b910] font-semibold">
                                     University of Peradeniya
                                 </h1>
-                                <p className="xl:text-md md:text-sm text-gray-500">International Students Programme</p>
+                                <p className="xl:text-md md:text-sm text-[#560606]">International Students Programme</p>
                             </div>
                         </div>
                     </div>
