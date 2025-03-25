@@ -7,6 +7,7 @@ import OurPartners from './OurPartners';
 import InterProjects from './InterProjects';
 import Opportunities from './Opportunities';
 import DataThree from './DataThree';
+import MenuFulldata from './MenuFulldata';
 
 const HomePage = () => {
   return (
@@ -16,14 +17,15 @@ const HomePage = () => {
 
 
       <div className="">
+        <MenuFulldata />
         <div className="xl:px-28 md:px-10 px-4 my-16">
           <h1 className="text-[#560606] uppercase font-semibold text-lg">What our Students say</h1>
           <StudentSay />
         </div>
         <AboutUOP />
-        <InterProjects />
+        {/* <InterProjects />
         <DataThree />
-        <Opportunities />
+        <Opportunities /> */}
         <div className="xl:px-28 md:px-10 px-4 my-16">
           <h1 className="text-[#560606] uppercase font-semibold text-lg">Our Partners</h1>
           <OurPartners />
