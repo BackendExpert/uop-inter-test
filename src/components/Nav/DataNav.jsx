@@ -36,12 +36,18 @@ import { FaUserGraduate, FaPeopleGroup, FaDownload } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
 import { MdPayment } from "react-icons/md";
 
-
+import hdr1 from '../../assets/Hdr1.jpg'
+import hdr2 from '../../assets/Hdr5.jpg'
+import hdr3 from '../../assets/Hdr6.jpg'
+import hdr4 from '../../assets/Hdr7.jpg'
+import hdr5 from '../../assets/wp11704381.jpg'
+import hdr6 from '../../assets/14.jpg'
 
 const secNavData = [
     // About
     {
         id: 1,
+        img: '',
         name: 'Home',
         link: '#'
     },
@@ -50,6 +56,7 @@ const secNavData = [
 
     {
         id: 2,
+        img: '',
         name: 'About UOP',
         link: '#'
     },
@@ -60,6 +67,7 @@ const secNavData = [
 
     {
         id: 3,
+        img: hdr1,
         name: 'Academic Programs',
         icon: FaUserGraduate,
         submenu: [
@@ -72,6 +80,7 @@ const secNavData = [
 
     {
         id: 4,
+        img: '',
         name: "Research Opportunities",
         icon: FaUserGraduate,
         link: '#'
@@ -81,6 +90,7 @@ const secNavData = [
 
     {
         id: 5,
+        img: hdr2,
         name: 'Admissions',
         icon: FaFileAlt,
         submenu: [
@@ -94,6 +104,7 @@ const secNavData = [
 
     {
         id: 6,
+        img: hdr3,
         icon: MdPayment,
         name: 'Fees & Scholarships',
         submenu: [
@@ -108,6 +119,7 @@ const secNavData = [
 
     {
         id: 7,
+        img: hdr4,
         icon: FaPeopleGroup,
         name: "Student Life",
         submenu: [
@@ -123,6 +135,7 @@ const secNavData = [
     // Vacancies
     {
         id: 8,
+        img: hdr5,
         name: 'International Student Support',
         submenu: [
             { id: 1, link: '#', name: 'International Relations Office' },
@@ -131,11 +144,13 @@ const secNavData = [
     },
     {
         id: 9,
+        img: '',
         name: 'Contact Us',
         link: '#'
     },
     {
         id: 10,
+        img: hdr6,
         name: 'Downloadable Resources',
         icon: FaDownload,
         submenu: [
@@ -146,6 +161,7 @@ const secNavData = [
     },
     {
         id: 11,
+        img: '',
         name: 'Apply Now ',
         icon: FaUserGraduate,
         link: '#'
