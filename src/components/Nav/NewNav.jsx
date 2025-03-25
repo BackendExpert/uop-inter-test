@@ -12,6 +12,22 @@ const NewNav = () => {
         setmenuopen(!menuopen);
     };
 
+    // Detect scroll position
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsTop(false);
+            } else {
+                setIsTop(true);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div className="relative">
             {/* Navigation Bar */}
