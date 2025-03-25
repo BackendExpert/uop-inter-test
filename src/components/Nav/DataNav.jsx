@@ -42,6 +42,7 @@ import hdr3 from '../../assets/Hdr8.jpg'
 import hdr4 from '../../assets/Hdr9.jpg'
 import hdr5 from '../../assets/wp11704381.jpg'
 import hdr6 from '../../assets/14.jpg'
+import PGIS from '../../assets/PGIS.jpg'
 
 const secNavData = [
     // About
@@ -80,7 +81,7 @@ const secNavData = [
 
     {
         id: 4,
-        img: '',
+        img: PGIS,
         name: "Research Opportunities",
         icon: FaUserGraduate,
         link: '#'
@@ -151,7 +152,7 @@ const secNavData = [
     {
         id: 10,
         img: hdr6,
-        name: 'Downloadable Resources',
+        name: 'Downloads',
         icon: FaDownload,
         submenu: [
             { id: 1, link: '#', name: 'Student Handbook (PDF)' },
