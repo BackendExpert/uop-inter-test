@@ -31,7 +31,7 @@ const NewNav = () => {
 
 
     return (
-        <div className="relative">
+        <div className="relative overflow-x-hidden">
             {/* Navigation Bar */}
             <div className="xl:px-20 px-4 py-0 bg-white/30 backdrop-blur-lg border-b border-gray-200 shadow-md">
                 <div className="flex justify-between items-center">
@@ -45,21 +45,20 @@ const NewNav = () => {
                             )}
                         </div>
 
-                        <div className="pl-4 flex">
+                        <div className="xl:pl-4 pl-0 flex">
                             {
                                 secNavData.map((data, index) => {
                                     if (data.id === 1 || data.id === 2 || data.id === 4 || data.id === 9 || data.id === 11) {
                                         return (
-                                            <a href={data.link} target="_blank" clas>
-                                           <div className="mx-4">
-                                                <p
-                                                    className={`font-semibold duration-500 text-lg uppercase xl:block hidden ${
-                                                        isTop ? "text-white" : "text-[#560606]"
-                                                    } hover:text-[#560606]`}
-                                                >
-                                                    {data.name}
-                                                </p>
-                                            </div>
+                                            <a href={data.link} target="_blank" className="xl:block hidden">
+                                                <div className="xl:mx-4">
+                                                    <p
+                                                        className={`font-semibold duration-500 text-lg uppercase  ${isTop ? "text-white" : "text-[#560606]"
+                                                            } hover:text-[#560606]`}
+                                                    >
+                                                        {data.name}
+                                                    </p>
+                                                </div>
                                             </a>
                                         )
                                     }

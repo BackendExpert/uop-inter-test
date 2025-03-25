@@ -11,7 +11,7 @@ const MenuFulldata = () => {
                         if (data.id === 3 || data.id === 5 || data.id === 6 || data.id === 7 || data.id === 8 || data.id === 10) {
                             return (
                                 <div className="" key={index}>
-                                    <img src={data.img} alt="" className='h-64 rounded-b-[50px] rounded-tl-[50px] w-full' />
+                                    <img src={data.img} alt="" className='h-40 rounded-b-[50px] rounded-tl-[50px] w-full' />
 
                                     <div className="mt-2">
                                         <h1 className="text-center uppercase font-semibold text-xl text-[#560606]">{data.name}</h1>

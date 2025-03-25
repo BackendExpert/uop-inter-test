@@ -18,8 +18,7 @@ const HomePage = () => {
 
       <div className="">
         <MenuFulldata />
-        <div className="xl:px-28 md:px-10 px-4 my-16">
-          <h1 className="text-[#560606] uppercase font-semibold text-lg">What our Students say</h1>
+        <div className="">
           <StudentSay />
         </div>
         <AboutUOP />

@@ -36,10 +36,10 @@ import { FaUserGraduate, FaPeopleGroup, FaDownload } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
 import { MdPayment } from "react-icons/md";
 
-import hdr1 from '../../assets/Hdr1.jpg'
-import hdr2 from '../../assets/Hdr5.jpg'
-import hdr3 from '../../assets/Hdr6.jpg'
-import hdr4 from '../../assets/Hdr7.jpg'
+import hdr1 from '../../assets/IS.jpg'
+import hdr2 from '../../assets/IS2.jpg'
+import hdr3 from '../../assets/Hdr8.jpg'
+import hdr4 from '../../assets/Hdr9.jpg'
 import hdr5 from '../../assets/wp11704381.jpg'
 import hdr6 from '../../assets/14.jpg'
 
