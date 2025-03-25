@@ -51,10 +51,10 @@ const NewNav = () => {
                                     if (data.id === 1 || data.id === 2 || data.id === 10 || data.id === 9 || data.id === 11) {
                                         if(data.id === 11){
                                             return (
-                                                <a href={data.link} target="_blank" className="xl:block -mt-2 rounded-xl duration-500 hover:bg-[#e8b910] hidden bg-[#560606] p-2">
+                                                <a href={data.link} target="_blank" className={`xl:block -mt-2 rounded-xl duration-500 hover:bg-[#e8b910] hidden bg-[#560606] p-2`}>
                                                     <div className="xl:mx-4">
                                                         <p
-                                                            className={`font-semibold duration-500 text-lg uppercase  ${isTop ? "text-white" : "text-[#560606]"
+                                                            className={`font-semibold duration-500 text-lg uppercase  ${isTop ? "text-white" : "text-white"
                                                                 } hover:text-[#560606]`}
                                                         >
                                                             {data.name}
